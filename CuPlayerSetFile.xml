@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<content>
+  <CuPlayerWidth>370</CuPlayerWidth>
+  <CuPlayerHeight>300</CuPlayerHeight>
+  <CuPlayerAutoPlay>no</CuPlayerAutoPlay>
+  <CuPlayerImage>word/start.jpg</CuPlayerImage>
+<CuPlayerLogo>images/voide_logo.png</CuPlayerLogo>
+<CuPlayerPosition>top-right</CuPlayerPosition>
+  <CuPlayerFile>voide/test.mp4</CuPlayerFile>
+</content>
