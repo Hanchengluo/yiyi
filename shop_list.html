@@ -224,9 +224,23 @@
                                 <a href="" >韩都衣舍</a>
                                 <a href="" >纤衣良品</a>
                                 <a href="" >莱瑞丽</a>
+                                <div id="rome_list" style="display: none">
+                                    <a href="" >诗曼图</a>
+                                    <a href="" >卡琳可</a>
+                                    <a href="">阿依莲(ayilian)</a>
+                                    <a href="" >花开二度</a>
+                                    <a href="" >朵黎</a>
+                                    <a href="" >薇昔语</a>
+                                    <a href="" >寒蔓伊品</a>
+                                    <a href="">菲伊恋雪</a>
+                                    <a href="" >悦思安</a>
+                                    <a href="" >韩都衣舍</a>
+                                    <a href="" >纤衣良品</a>
+                                    <a href="" >莱瑞丽</a>
+                                </div>
                             </div>
                             <div class="fn3">
-                                <a class="f3_rm" href="" title="">更多</a>
+                                <a class="f3_rm" href="##" title="" onclick="openShutManager(this,'rome_list',false,'收起<img src=images/f3_mr2.png />','更多<img src=images/f3_mr1.png />')">更多<img src=images/f3_mr1.png /></a>
                                 <a class="f3_dx" href="" title="">+ 多选</a>
                             </div>
                         </div>
@@ -286,9 +300,34 @@
                                 <a class="f3_dx" href="" title="">+ 多选</a>
                             </div>
                         </div>
+                        <div class="more_box" id="more_box" style="display:none">
+                            <div class="filtrate_price clearfix" >
+                                <div class="fn1">
+                                    <a href="javascript:;" rel="nofollow">年龄段:</a>
+                                </div>
+                                <div class="fn2">
+                                    <a href="">儿童</a>
+                                    <a href="" >少年</a>
+                                    <a href="" >青年</a>
+                                    <a href="" >成人</a>
+                                    <a href="" >中年</a>
+                                    <a href="">老年</a>
+                                </div>
+                            </div>
+                            <div class="filtrate_price clearfix" >
+                                <div class="fn1">
+                                    <a href="javascript:;" rel="nofollow">风格:</a>
+                                </div>
+                                <div class="fn2">
+                                    <a href="">淑女风</a>
+                                    <a href="" >可爱风</a>
+                                    <a href="" >职业风</a>
+                                </div>
+                            </div>
+                        </div>
                         <div class="filtrate_more">
                             <div class="fr1">
-                                <a href="" title="">更多选项（版型，衣长，颜色，流行元素等）</a>
+                                <a href="##" title="" onclick="openShutManager(this,'more_box',false,'收起展开选项','显示更多选项')">显示更多选项</a>
                             </div>
                         </div>
                     </div>
@@ -979,4 +1018,24 @@
         </div>
     </div>
 </body>
+<script type="text/javascript">
+function openShutManager(oSourceObj,oTargetObj,shutAble,oOpenTip,oShutTip){
+var sourceObj = typeof oSourceObj == "string" ? document.getElementById(oSourceObj) : oSourceObj;
+var targetObj = typeof oTargetObj == "string" ? document.getElementById(oTargetObj) : oTargetObj;
+var openTip = oOpenTip || "";
+var shutTip = oShutTip || "";
+if(targetObj.style.display!="none"){
+   if(shutAble) return;
+   targetObj.style.display="none";
+   if(openTip  &&  shutTip){
+    sourceObj.innerHTML = shutTip;
+   }
+} else {
+   targetObj.style.display="block";
+   if(openTip  &&  shutTip){
+    sourceObj.innerHTML = openTip;
+   }
+}
+}
+</script>
 </html>

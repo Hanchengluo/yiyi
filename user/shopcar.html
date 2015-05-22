@@ -9,7 +9,17 @@
     <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="../css/css.css">
     <link rel="stylesheet" type="text/css" href="../css/index.css">
-    <link rel="stylesheet" type="text/css" href="../css/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="../css/stley.css">
+    <script type="text/javascript" src="../js/jquery.js"></script>
+    <script type="text/javascript" src="../js/bootstrap.min.js"></script>
+    <script>
+        $(function(){
+            $("#mytab a").click(function(e){
+                e.preventDefault();
+                $(this).tab("show");
+            });
+    })
+    </script>
 <body>
     <div class="conteniner">
         <div class="top_box">
@@ -101,37 +111,37 @@
             <div class="nav">
                 <ul>
                     <li>
-                        <a href="index.html" title="" class="nav_h">首页</a>
+                        <a href="../index.html" title="" class="nav_h">首页</a>
                     </li>
                     <li>
-                        <a href="shop_list.html" title="">易易商城</a>
+                        <a href="../shop_list.html" title="">易易商城</a>
                     </li>
                     <li>
-                        <a href="article_list.html" title="">最新动态</a>
+                        <a href="../article_list.html" title="">最新动态</a>
                     </li>
                     <li>
-                        <a href="article_list.html" title="">惠民频道</a>
+                        <a href="../article_list.html" title="">惠民频道</a>
                     </li>
                     <li>
-                        <a href="referral.html" title="">招商引资</a>
+                        <a href="../referral.html" title="">招商引资</a>
                     </li>
                     <li>
-                        <a href="referral.html" title="">时事要闻</a>
+                        <a href="../referral.html" title="">时事要闻</a>
                     </li>
                     <li>
-                        <a href="referral.html" title="">会员俱乐部</a>
+                        <a href="../referral.html" title="">会员俱乐部</a>
                     </li>
                     <li>
-                        <a href="referral.html" title="">客服中心</a>
+                        <a href="../referral.html" title="">客服中心</a>
                     </li>
                     <li>
-                        <a href="download.html" title="">下载中心</a>
+                        <a href="../download.html" title="">下载中心</a>
                     </li>
                     <li>
-                        <a href="referral.html" title="">招贤纳士</a>
+                        <a href="../referral.html" title="">招贤纳士</a>
                     </li>
                     <li>
-                        <a href="referral.html" title="">关于我们</a>
+                        <a href="../referral.html" title="">关于我们</a>
                     </li>
                     <div class="nav_banner">
                         <img src="../images/icon-nvajob.png" height="59" width="195" alt="百万重金猎人才"></div>
@@ -142,9 +152,209 @@
     <div class="content clearfix">
         <div class="shopcar">
             <div class="s_car1">
-                <h2>我的购物车</h2>
+                <h2><span>我的购物车</span> <a href="" title="">返回我的易易>></a></h2>
+                <table width="1170" class="tit">
+                  <tr>
+                    <th width="84" height="34" align="center" bgcolor="#f6fafe" scope="col">
+                    <form id="form1" name="form1" method="post" action="">
+                      <input type="checkbox" name="checkbox" id="checkbox" />
+                      <label for="checkbox"></label>
+                      全选
+                    </form>
+                    </th>
+                    <th width="404" align="center" bgcolor="#f6fafe" scope="col">商品</th>
+                    <th width="114" align="center" bgcolor="#f6fafe" scope="col">单价（元）</th>
+                    <th width="114" align="center" bgcolor="#f6fafe" scope="col">数量</th>
+                    <th width="114" align="center" bgcolor="#f6fafe" scope="col">小计（元）</th>
+                    <th width="138" align="center" bgcolor="#f6fafe" scope="col">操作</th>
+                  </tr>
+                </table>
+                <div class="sd_name clearfix">
+                      <input type="checkbox" name="checkbox" id="checkbox" />
+                      <label for="checkbox"></label>
+                      <span>特步专卖店</span>
+                      <a href="" class="lx">联系卖家</a>
+                </div>
+                <table width="1150" class="sp_list">
+                    <tr>
+                        <th width="84" height="160" scope="row">
+                            <a class="shopcar_img" href="" title="">
+                                <img src="../word/shopcar1.jpg" height="122" width="148" alt="">
+                            </a>
+                        </th>
+                        <td width="350" class="sp_txt">特步男鞋 运动鞋男跑步鞋男款2015新款跑鞋男春夏网布超轻透气慢跑<br />
+                          鞋子 休闲鞋旅游鞋 <br />
+                        荧光绿 42</td>
+                        <td width="114" align="center">148</td>
+                        <td width="114" align="center">
+                            <span id="shuliang" class="Spinner"><a class="Decrease" href="javascript:void(0)"><i>-</i></a><input class="Amount" value="1" autocomplete="off" maxlength="3"><a class="Increase" href="javascript:void(0)"><i>+</i></a></span>
+                        </td>
+                        <td width="114" align="center">148</td>
+                        <td width="138" align="center"><a href="" title="">删除</a></td>
+                      </tr>
+                      <tr>
+                        <th width="84" height="160" scope="row">
+                            <a class="shopcar_img" href="" title="">
+                                <img src="../word/shopcar1.jpg" height="122" width="148" alt="">
+                            </a>
+                        </th>
+                        <td width="350" class="sp_txt">特步男鞋 运动鞋男跑步鞋男款2015新款跑鞋男春夏网布超轻透气慢跑<br />
+                          鞋子 休闲鞋旅游鞋 <br />
+                        荧光绿 42</td>
+                        <td width="114" align="center">148</td>
+                        <td width="114" align="center">
+                            <span id="shuliang" class="Spinner"><a class="Decrease" href="javascript:void(0)"><i>-</i></a><input class="Amount" value="1" autocomplete="off" maxlength="3"><a class="Increase" href="javascript:void(0)"><i>+</i></a></span>
+                        </td>
+                        <td width="114" align="center">148</td>
+                        <td width="138" align="center"><a href="" title="">删除</a></td>
+                      </tr>
+                </table>
+                <table width="1150" class="sp_js">
+                  <tr>
+                    <td width="84" height="32" align="center" bgcolor="#f6fafe"><form id="form1" name="form1" method="post" action="">
+                      <input type="checkbox" name="checkbox" id="checkbox" />
+                      全选
+                      <label for="checkbox"></label>
+                    </form></td>
+                    <td width="153" align="center" bgcolor="#f6fafe"><a href="" title="">删除所选商品</a></td>
+                    <td width="153" align="center" bgcolor="#f6fafe"><a href="" title="">移到我的关注</a></td>
+                    <td width="222" bgcolor="#f6fafe">&nbsp;</td>
+                    <td width="159" align="center" bgcolor="#f6fafe">已选商品<label for="">1</label>件</td>
+                    <td width="226" align="center" bgcolor="#f6fafe"> 总价（不含运费）：<label for="">148.00</label></td>
+                    <td width="103" bgcolor="#f6fafe"><a class="qjs" href="submit_order.html" title="">去结算</a></td>
+                  </tr>
+                </table>
             </div>
-            <div class="s_car2"></div>
+            <div class="s_car2">
+            <!-- 选项卡组件（菜单项nav-tabs）-->
+            <ul id="mytab" class="nav nav-tabs" role="tablist">
+                <li class="active"><a href="#tabs_1" role="tab">我关注的商品</a></li>
+                <li><a href="#tabs_2" role="tab">猜你喜欢</a></li>
+                <li><a href="#tabs_3" role="tab">我的浏览</a></li>
+            </ul>
+            <!-- 选项卡面板 -->
+            <div id="myTabContent2" class="tab-content">
+                <div class="tab-pane fade in active my_gz clearfix" id="tabs_1">
+                    <ul>
+                        <li>
+                            <a class="sbb1_img" href="" title="">
+                                <img src="../word/shop_tui_1.jpg" height="160" width="160" alt="">
+                            </a>
+                            <h3><a href="" title="">芭莎茜妮2015夏季新款女装韩版时尚简约百搭显瘦纯色</a></h3>
+                            <p class="jp">￥199</p>
+                        </li>
+                        <li>
+                            <a class="sbb1_img" href="" title="">
+                                <img src="../word/shop_tui_1.jpg" height="160" width="160" alt="">
+                            </a>
+                            <h3><a href="" title="">芭莎茜妮2015夏季新款女装韩版时尚简约百搭显瘦纯色</a></h3>
+                            <p class="jp">￥199</p>
+                        </li>
+                        <li>
+                            <a class="sbb1_img" href="" title="">
+                                <img src="../word/shop_tui_1.jpg" height="160" width="160" alt="">
+                            </a>
+                            <h3><a href="" title="">芭莎茜妮2015夏季新款女装韩版时尚简约百搭显瘦纯色</a></h3>
+                            <p class="jp">￥199</p>
+                        </li>
+                        <li>
+                            <a class="sbb1_img" href="" title="">
+                                <img src="../word/shop_tui_1.jpg" height="160" width="160" alt="">
+                            </a>
+                            <h3><a href="" title="">芭莎茜妮2015夏季新款女装韩版时尚简约百搭显瘦纯色</a></h3>
+                            <p class="jp">￥199</p>
+                        </li>
+                        <li>
+                            <a class="sbb1_img" href="" title="">
+                                <img src="../word/shop_tui_1.jpg" height="160" width="160" alt="">
+                            </a>
+                            <h3><a href="" title="">芭莎茜妮2015夏季新款女装韩版时尚简约百搭显瘦纯色</a></h3>
+                            <p class="jp">￥199</p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="tab-pane fade my_gz clearfix" id="tabs_2">
+                    <ul>
+                        <li>
+                            <a class="sbb1_img" href="" title="">
+                                <img src="../word/shop_tui_1.jpg" height="160" width="160" alt="">
+                            </a>
+                            <h3><a href="" title="">芭莎茜妮2015夏季新款女装韩版时尚简约百搭显瘦纯色</a></h3>
+                            <p class="jp">￥199</p>
+                        </li>
+                        <li>
+                            <a class="sbb1_img" href="" title="">
+                                <img src="../word/shop_tui_1.jpg" height="160" width="160" alt="">
+                            </a>
+                            <h3><a href="" title="">芭莎茜妮2015夏季新款女装韩版时尚简约百搭显瘦纯色</a></h3>
+                            <p class="jp">￥199</p>
+                        </li>
+                        <li>
+                            <a class="sbb1_img" href="" title="">
+                                <img src="../word/shop_tui_1.jpg" height="160" width="160" alt="">
+                            </a>
+                            <h3><a href="" title="">芭莎茜妮2015夏季新款女装韩版时尚简约百搭显瘦纯色</a></h3>
+                            <p class="jp">￥199</p>
+                        </li>
+                        <li>
+                            <a class="sbb1_img" href="" title="">
+                                <img src="../word/shop_tui_1.jpg" height="160" width="160" alt="">
+                            </a>
+                            <h3><a href="" title="">芭莎茜妮2015夏季新款女装韩版时尚简约百搭显瘦纯色</a></h3>
+                            <p class="jp">￥199</p>
+                        </li>
+                        <li>
+                            <a class="sbb1_img" href="" title="">
+                                <img src="../word/shop_tui_1.jpg" height="160" width="160" alt="">
+                            </a>
+                            <h3><a href="" title="">芭莎茜妮2015夏季新款女装韩版时尚简约百搭显瘦纯色</a></h3>
+                            <p class="jp">￥199</p>
+                        </li>
+                    </ul>
+
+                </div>
+                <div class="tab-pane fade my_gz clearfix" id="tabs_3">
+                    <ul>
+                        <li>
+                            <a class="sbb1_img" href="" title="">
+                                <img src="../word/shop_tui_1.jpg" height="160" width="160" alt="">
+                            </a>
+                            <h3><a href="" title="">芭莎茜妮2015夏季新款女装韩版时尚简约百搭显瘦纯色</a></h3>
+                            <p class="jp">￥199</p>
+                        </li>
+                        <li>
+                            <a class="sbb1_img" href="" title="">
+                                <img src="../word/shop_tui_1.jpg" height="160" width="160" alt="">
+                            </a>
+                            <h3><a href="" title="">芭莎茜妮2015夏季新款女装韩版时尚简约百搭显瘦纯色</a></h3>
+                            <p class="jp">￥199</p>
+                        </li>
+                        <li>
+                            <a class="sbb1_img" href="" title="">
+                                <img src="../word/shop_tui_1.jpg" height="160" width="160" alt="">
+                            </a>
+                            <h3><a href="" title="">芭莎茜妮2015夏季新款女装韩版时尚简约百搭显瘦纯色</a></h3>
+                            <p class="jp">￥199</p>
+                        </li>
+                        <li>
+                            <a class="sbb1_img" href="" title="">
+                                <img src="../word/shop_tui_1.jpg" height="160" width="160" alt="">
+                            </a>
+                            <h3><a href="" title="">芭莎茜妮2015夏季新款女装韩版时尚简约百搭显瘦纯色</a></h3>
+                            <p class="jp">￥199</p>
+                        </li>
+                        <li>
+                            <a class="sbb1_img" href="" title="">
+                                <img src="../word/shop_tui_1.jpg" height="160" width="160" alt="">
+                            </a>
+                            <h3><a href="" title="">芭莎茜妮2015夏季新款女装韩版时尚简约百搭显瘦纯色</a></h3>
+                            <p class="jp">￥199</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            </div>
         </div>
     </div>
     <!-- end content -->
@@ -222,6 +432,4 @@
     </div>
 </div>
 </body>
-<script type="text/javascript" src="../js/jquery.js"></script>
-<script type="text/javascript" src="../js/bootstrap.min.js"></script>
 </html>
