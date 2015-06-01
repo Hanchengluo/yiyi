@@ -121,8 +121,8 @@ $(function(){
 $(function(){
     $('#breakingnews3').BreakingNews({
         title: '通知公告',
-        titlebgcolor: '#4998f4',
-        linkhovercolor: '#4998f4',
+        titlebgcolor: '#e83426',
+        linkhovercolor: '#e83426',
         border: 'none',
         timer: 5000,
         effect: 'slide'

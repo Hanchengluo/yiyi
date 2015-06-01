@@ -1,21 +1,21 @@
 @charset "UTF-8";
 //定义字体大小
-@fz:14px;
+        @fz:        14px;
 //定义全局文字样式
-@c_h: #5f5f5f;
-@c_b: #ffffff;
-@c_hs: #191919;
-@c_ls:#4998f4;
+        @c_h:       #5f5f5f;
+        @c_b:       #ffffff;
+        @c_hs:      #191919;
+        @c_ls:      #e83426;
 // 定义全局使用背景
-@bg_b: #fff;
-@bg_h:#f2f2f2;
-@bg_l: #4998f4;
-@bg_top:#191919;
+        @bg_b:      #fff;
+        @bg_h:      #f2f2f2;
+        @bg_l:      #e83426;
+        @bg_top:    #f7f7f7;
 
-@w100:100%;
-@w1170:1170px;
-@w780:780px;
-@w372:372px;
+        @w100:      100%;
+        @w1170:     1170px;
+        @w780:      780px;
+        @w372:      372px;
 
 .conteniner{
     width:@w100;
@@ -23,7 +23,7 @@
     background: @bg_h;
 }
 .list_zc{
-background: #4998f4;
+background: @c_ls;
 }
 // 顶部黑色导航
 .top_box{
@@ -32,6 +32,7 @@ background: #4998f4;
     width: 100%;
     height:@hg;
     background: @bg_top;
+    border-bottom:#eeeeee solid 1px;
     .top_center{
         width: 1170px;
         height: @hg;
@@ -105,14 +106,14 @@ background: #4998f4;
 }
 .logo{
     float: left;
-    width: 160px;
-    height: 82px;
-    line-height: 82px;
-    margin-top: 12px;
+    width: 400px;
+    height: 88px;
+    line-height: 88px;
+    margin-top: 5px;
     a{
         display: inline-block;
-        width:160px;
-        height: 55px;
+        width:400px;
+        height: 88px;
     }
 }
 .logo_search{
@@ -134,7 +135,7 @@ background: #4998f4;
         bottom: 0;
         width: 315px;
         height: 43px;
-        border:solid 4px #4998F4;
+        border:solid 4px @c_ls;
         text-indent: 6px;
         font-size: @fz;
     }
@@ -144,7 +145,7 @@ background: #4998f4;
         right: 0;
         width:58px;
         height: 43px;
-        background:#4998F4;
+        background:@c_ls;
         text-align: center;
     }
     img{
@@ -178,7 +179,7 @@ background: #4998f4;
 // end logo_box
 .header_box{
     @hg:62px;
-    @bg:#2871D5;
+    @bg:#ad1408;
 
     width: @w100;
     height: @hg;
@@ -201,6 +202,14 @@ background: #4998f4;
             float: left;
             height: @hg;
             line-height: @hg;
+        }
+        span{
+            display: inline-block;
+            width: 162px;
+            font-size: 24px;
+            color: #fff;
+            font-weight: bold;
+            padding-left: 4px;
         }
         a{
             display: inline-block;
@@ -497,7 +506,7 @@ background: #4998f4;
     @w159:159px;
     @w19:27px;
     @hg:67px;
-    @bg:#2a75dd;
+    @bg:#e83426;
     @img:url(../images/icon-list-bg.png) 0 0 no-repeat;
     @mg:20px;
 
@@ -580,12 +589,12 @@ background: #4998f4;
 
 }
 // end top_list
-@c_f1:#4e9bf4;
-@c_f2:#f1493c;
-@c_f3:#f2395b;
-@c_f4:#169e49;
-@c_f5:#469b9e;
-@c_f6:#f9ee30;
+        @c_f1:      #e83426;
+        @c_f2:      #f1493c;
+        @c_f3:      #f2395b;
+        @c_f4:      #169e49;
+        @c_f5:      #469b9e;
+        @c_f6:      #f9ee30;
     .list_f1{
         background: @c_f1 !important;
     }
@@ -642,6 +651,7 @@ background: #4998f4;
         text-align: left;
         padding-left: 10px;
         line-height: 18px;
+        color: @c_hs;
     }
     .info{
         font-size: @fz -2px;
@@ -929,7 +939,7 @@ background: #4998f4;
             display: inline-block;
             width: 102px;
             height:24px;
-            margin: 0 6px;
+            margin: 0 8px;
             line-height: 24px;
             text-align: center;
             font-size: @fz;
@@ -1147,7 +1157,7 @@ background: #4998f4;
     height: 100%;
 
     opacity: .7;
-    background: #4998f4;
+    background: @c_ls;
 
     filter: alpha(opacity=70);
 }
